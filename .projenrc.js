@@ -15,6 +15,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: [
     '.idea',
   ],
+  dependabot: true,
+  depsUpgrade: false,
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
