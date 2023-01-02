@@ -1,5 +1,5 @@
 {
-  "name": "aws-cdk-pattern-spa",
+  "name": "@npm-jessegrabowski/aws-cdk-pattern-spa",
   "repository": {
     "type": "git",
     "url": "git@github.com:jesse-grabowski-devops/aws-cdk-pattern-spa.git"
@@ -30,7 +30,7 @@
   },
   "author": {
     "name": "Jesse Grabowski",
-    "email": "github@jessegrabowski.com",
+    "email": "npm@jessegrabowski.com",
     "organization": false
   },
   "devDependencies": {
@@ -66,6 +66,9 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [
