@@ -1,6 +1,4 @@
-const { awscdk,
-  github
-} = require('projen');
+const { awscdk, github } = require('projen');
 const { NpmAccess } = require('projen/lib/javascript');
 
 const cdkVersion = '2.58.1';
