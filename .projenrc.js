@@ -15,8 +15,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: [
     '.idea',
   ],
-  dependabot: true,
-  depsUpgrade: false,
   githubOptions: {
     projenCredentials: github.GithubCredentials.fromApp({}),
   },
