@@ -1,5 +1,6 @@
 {
   "name": "@npm-jessegrabowski/aws-cdk-pattern-spa",
+  "description": "A CDK construct for deploying a single page application (SPA) to AWS.",
   "repository": {
     "type": "git",
     "url": "git@github.com:jesse-grabowski-devops/aws-cdk-pattern-spa.git"
@@ -38,7 +39,7 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.58.1",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -58,7 +59,7 @@
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.58.1",
     "constructs": "^10.0.5"
   },
   "keywords": [

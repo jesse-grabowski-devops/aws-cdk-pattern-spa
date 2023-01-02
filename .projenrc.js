@@ -1,13 +1,16 @@
 const { awscdk } = require('projen');
 const { NpmAccess } = require('projen/lib/javascript');
 
+const cdkVersion = '2.58.1';
+
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Jesse Grabowski',
   authorAddress: 'npm@jessegrabowski.com',
-  cdkVersion: '2.1.0',
+  cdkVersion,
   defaultReleaseBranch: 'main',
   name: '@npm-jessegrabowski/aws-cdk-pattern-spa',
   repositoryUrl: 'git@github.com:jesse-grabowski-devops/aws-cdk-pattern-spa.git',
+  description: 'A CDK construct for deploying a single page application (SPA) to AWS.',
   npmAccess: NpmAccess.PUBLIC,
   gitignore: [
     '.idea',
