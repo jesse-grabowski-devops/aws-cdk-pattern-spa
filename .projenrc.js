@@ -1,4 +1,6 @@
-const { awscdk } = require('projen');
+const { awscdk,
+  github
+} = require('projen');
 const { NpmAccess } = require('projen/lib/javascript');
 
 const cdkVersion = '2.58.1';
@@ -17,9 +19,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   ],
   dependabot: true,
   depsUpgrade: false,
+  githubOptions: {
+    projenCredentials: github.GithubCredentials.fromApp({}),
+  },
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+
 project.synth();
